@@ -1,0 +1,213 @@
+* {
+    margin: var(--size-0);
+    padding: var(--size-0);
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--mainBg);
+    font-family: "Space Grotesk", sans-serif, serif;
+    line-height: var(--size-6);
+}
+
+/* navigation */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-8) calc(100vw - 85%);
+    border-bottom: 1px var(--neutralDark) solid;
+    background: var(--transparent);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+
+.logo {
+    height: var(--size-10);
+}
+
+.main-menu {
+    list-style-type: none;
+    display: flex;
+    gap: var(--size-6);
+}
+
+.menu-item {
+    color: var(--baseWhite);
+    font-weight: var(--font-regular);
+    cursor: pointer;
+    font-size: var(--font-navigation);
+    transition: all ease-in-out .3s;
+}
+
+#aboutUs:hover,
+#myWorks:hover {
+    color: var(--primaryAccent);
+    text-shadow: 0 0 5px var(--hoverEffect);
+}
+
+#home {
+    color: var(--primaryAccent);
+    font-weight: var(--font-bold);
+}
+
+.cta-group {
+    display: flex;
+    gap: var(--size-6);
+    align-items: center;
+}
+
+.download {
+    text-decoration: none;
+    color: var(--baseWhite);
+}
+
+.con-btn {
+    background: var(--primaryAccent);
+    border: none;
+    padding: 0 var(--size-8);
+    height: var(--size-11);
+    font-size: var(--font-navigation);
+    color: var(--baseWhite);
+    cursor: pointer;
+    font-weight: var(--font-regular);
+}
+
+.con-btn:hover {
+    background: var(--baseWhite);
+    color: var(--primaryAccent);
+    font-weight: var(--font-medium);
+}
+
+/* footer */
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: var(--size-8) 0;
+    margin-top: var(--size-13);
+    background: var(--baseBlack);
+    color: var(--baseWhite);
+    padding: var(--size-8) calc(100vw - 85%);
+    gap: var(--size-6);
+  }
+
+  .footer-row-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row-top-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4);
+    max-width: 300px;
+  }
+
+  .row-top-left span {
+    font-size: var(--font-footerSmall);
+  }
+
+  .row-top-right {
+    display: flex;
+    gap: var(--size-12);
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4);
+  }
+
+  .link-title {
+    font-size: var(--font-footerTitle);
+  }
+
+  .ft-link-item {
+    font-size: var(--font-footerSmall);
+  }
+
+  .ft-link-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2);
+  }
+
+  .ft-line {
+    width: 100%;
+    height: 1px;
+    background: var(--neutralDark);
+  }
+
+  .footer-row-bot {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--size-6);
+  }
+
+  .ft-company-logos {
+    display: flex;
+    gap: var(--size-8);
+  }
+
+/* variable declarations */
+
+:root {
+
+    /* color */
+    
+    --primaryAccent: #009FFF;
+    --secondaryAccent: #AF3AFF;
+    --mainBg: #171717;
+    --transparent: rgba(17, 17, 17, .3);
+    --baseWhite: #ffffff;
+    --baseBlack: #000000;
+    --neutralDark: #3D3D3D;
+    --neutralLight: #B0B0B0;
+    --iconWhite: #ffffff;
+    --iconBlack: #171717;
+    --iconColor: #0099ff;
+    --hoverEffect: rgba(178, 228, 255, .5);
+    --hoverCard: rgba(0, 159, 255, .30);
+
+    /* sizing values */
+
+    --size-0: 0;
+    --size-1: 4px;
+    --size-2: 8px;
+    --size-3: 12px;
+    --size-4: 16px;
+    --size-5: 20px;
+    --size-6: 24px;
+    --size-7: 28px;
+    --size-8: 32px;
+    --size-9: 36px;
+    --size-10: 40px;
+    --size-11: 48px;
+    --size-12: 64px;
+    --size-13: 128px;
+    --size-14: 256px;
+
+    /* font size */
+
+    --font-paragraph: 1rem;
+    --font-navigation: 1rem;
+    --font-cta: 1rem;
+    --font-displayLarge: 2.5rem;
+    --font-displayMedium: 2rem;
+    --font-displaySmall: 1.5rem;
+    --font-footerSmall: 14px;
+    --font-footerTitle: 1rem;
+
+    /* font weight */
+
+    --font-regular: 300;
+    --font-medium: 500;
+    --font-bold: 700;
+}
